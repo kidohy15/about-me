@@ -1,3 +1,48 @@
+/* 공통 영역 */
 body {
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
     font-family: 'Nanum Gothic', sans-serif;
+}
+
+img {
+    display: block;
+    object-fit: cover;
+}
+
+/* Header 영역 */
+header {
+    background-color: aqua;
+}
+header .inner {
+    background-color: yellowgreen;
+    width: 1000px;
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
+}
+header .logo {
+    background-color: thistle;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+header .logo img {
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+}
+
+
+/* 본문 영역 */
+section {
+    background-color: bisque;
+}
+
+/* footer 영역 */
+footer {
+    background-color: aquamarine;
 }
