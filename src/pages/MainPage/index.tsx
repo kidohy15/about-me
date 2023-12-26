@@ -1,8 +1,15 @@
 import React from 'react'
+import { MainViewInner, MainViewWrapper } from './MainPage.styles'
 
 const MainPage = () => {
   return (
-    <div>MainPage</div>
+    <MainViewWrapper>
+      <MainViewInner>
+        <div>
+          <span>developer Kim Dong Hyun</span>
+        </div>
+      </MainViewInner>
+    </MainViewWrapper>
   )
 }
 

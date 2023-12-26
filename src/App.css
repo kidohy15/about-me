@@ -51,3 +51,14 @@ li {
       padding: 5px;
   }
 }
+
+/* 내가 작성한 영역 */
+a {
+  color:#767A89;
+  text-decoration: none;
+}
+a:hover {
+  color:black;
+  text-decoration: none;
+  font-weight: 500;
+}

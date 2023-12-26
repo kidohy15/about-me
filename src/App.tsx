@@ -1,7 +1,8 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import './App.css'
 import Layout from './components/layout/Layout'
 import MainPage from './pages/MainPage'
+import AboutPage from './pages/AboutPage'
 
 function App() {
 
@@ -9,10 +10,10 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route>
-            <Route path='/' element={<Layout />} >
+          <Route path='/' element={<Layout />} >
               <Route index element={<MainPage />} />
-            </Route>
+              <Route path='/about' element={<AboutPage />} />
+              <Route path='*' element={<Navigate replace to="/" />} />
           </Route>
         </Routes>
       </BrowserRouter>

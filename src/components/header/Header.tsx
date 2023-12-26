@@ -1,11 +1,12 @@
 import React from 'react'
-import { HeaderLogo, HeaderNav, HeaderWrapper } from './Header.styles'
+import { HeaderInner, HeaderLogo, HeaderNav, HeaderWrapper } from './Header.styles'
 import { Link } from 'react-router-dom'
+// import Menu from './menu/Menu'
 
 const Header = () => {
   return (
-    <div>
-      <HeaderWrapper>
+    <HeaderWrapper>
+      <HeaderInner>
         <HeaderLogo>
           <Link to={"/"}>
             <h3>DH.KIM</h3>
@@ -13,15 +14,35 @@ const Header = () => {
         </HeaderLogo>
         <HeaderNav>
           <ul>
-            <li>About me</li>
-            <li>Career & Skills</li>
-            <li>portfolio</li>
-            <li>Plan</li>
-            <li>Contact me</li>
+            <li>
+              <Link to="/about">About me</Link>
+              {/* <div>About me</div> */}
+              {/* <Menu /> */}
+            </li>
+            <li>
+              <Link to="/career">Career & Skills</Link>
+              {/* <div>Career & Skills</div> */}
+              {/* <Menu /> */}
+            </li>
+            <li>
+              <Link to="/portfolio">Portfolio</Link>
+              {/* <div>portfolio</div> */}
+              {/* <Menu /> */}
+            </li>
+            <li>
+              <Link to="/plan">Plan</Link>
+              {/* <div>Plan</div> */}
+              {/* <Menu /> */}
+            </li>
+            <li>
+              <Link to="/contact">Contact me</Link>
+              {/* <div>Contact me</div> */}
+              {/* <Menu /> */}
+            </li>
           </ul>
         </HeaderNav>
-      </HeaderWrapper>
-    </div>
+      </HeaderInner>
+    </HeaderWrapper>
   )
 }
 
