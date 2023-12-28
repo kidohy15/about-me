@@ -7,19 +7,22 @@ const Menu = () => {
       <MenuContents>
         <MenuItems>
           <li>
-            <h3>menu 1</h3>
             <MenuItem>
-              <li>content 1</li>
+              <li>history</li>
               <li>content 1</li>
               <li>content 1</li>
             </MenuItem>
           </li>
           <li>
-            <h3>menu 2</h3>
             <MenuItem>
-              <li>content 1</li>
-              <li>content 1</li>
-              <li>content 1</li>
+              <li>Career</li>
+              <li>skills</li>
+            </MenuItem>
+          </li>
+          <li>
+            <MenuItem>
+              <li>Career</li>
+              <li>skills</li>
             </MenuItem>
           </li>
         </MenuItems>

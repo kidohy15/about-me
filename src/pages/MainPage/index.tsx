@@ -5,8 +5,13 @@ const MainPage = () => {
   return (
     <MainViewWrapper>
       <MainViewInner>
+        <p>
+          안녕하세요<br/>
+          개발자<br/>
+          <span>김동현</span>입니다.
+        </p>
         <div>
-          <span>developer Kim Dong Hyun</span>
+          <img src="" alt="my_pictur" />
         </div>
       </MainViewInner>
     </MainViewWrapper>

@@ -1,16 +1,69 @@
 import React from 'react'
-import { AboutWrapper } from './PortfolioPage.styles'
+import { PortfolioWrapper } from './PortfolioPage.styles'
 
 const PortfolioPage = () => {
   return (
     <>
-      <AboutWrapper>
-        <section>향수</section>
-        <section>제약</section>
-        <section>일본</section>
-        <section>개발</section>
-        <section>관심사</section>
-      </AboutWrapper>
+      <PortfolioWrapper>
+        <div className='portfolio-contents'>
+          <div className='portfolio-item'>
+            <div>이미지</div>
+            <div>
+              <h5>제목</h5>
+              <p>내용</p>
+            </div>
+          </div>
+          <div className='portfolio-item'>
+            <div>이미지</div>
+            <div>
+              <h5>제목</h5>
+              <p>내용</p>
+            </div>
+          </div>
+          <div className='portfolio-item'>
+            <div>이미지</div>
+            <div>
+              <h5>제목</h5>
+              <p>내용</p>
+            </div>
+          </div>
+          <div className='portfolio-item'>
+            <div>이미지</div>
+            <div>
+              <h5>제목</h5>
+              <p>내용</p>
+            </div>
+          </div>
+          <div className='portfolio-item'>
+            <div>이미지</div>
+            <div>
+              <h5>제목</h5>
+              <p>내용</p>
+            </div>
+          </div>
+          <div className='portfolio-item'>
+            <div>이미지</div>
+            <div>
+              <h5>제목</h5>
+              <p>내용</p>
+            </div>
+          </div>
+          <div className='portfolio-item'>
+            <div>이미지</div>
+            <div>
+              <h5>제목</h5>
+              <p>내용</p>
+            </div>
+          </div>
+          <div className='portfolio-item'>
+            <div>이미지</div>
+            <div>
+              <h5>제목</h5>
+              <p>내용</p>
+            </div>
+          </div>
+        </div>
+      </PortfolioWrapper>
 
     </>
   )

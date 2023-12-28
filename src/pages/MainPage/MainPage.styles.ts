@@ -1,29 +1,36 @@
 import styled from "styled-components";
 
 export const MainViewWrapper = styled.section`
-display: grid;
+  display: flex;
   /* justify-content: center; */
   background-image: url("../../../public/assets/ptt3.jpg");
   background-position: cover;
+  width: 100%;
+  height: 100vh;
   `
 
 export const MainViewInner = styled.div`
-justify-content: center;
-  width: 1100px;
-  height: 500px;
+  justify-content: center;
+  width: 100%;
+  max-width: 1280px;
+  height: 100%;
   position: relative; 
   margin: 0 auto;
-  background-color: aliceblue;
+  background-color: darkolivegreen;
   
-  & > div {
-    width: 50px;
+  & > p {
+    width: auto;
     height: 100px;
     position: absolute;
-    display: flex;
-    color: white;
+    /* display: flex; */
+    color: #fff;
+    font-size: 92px;
     bottom: 0;
     top: 0;
     left: 20px;
     margin: auto 0 ;
+    & > span {
+      color: aquamarine;
+    }
   }
 `

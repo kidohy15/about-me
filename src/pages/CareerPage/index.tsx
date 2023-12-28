@@ -5,11 +5,16 @@ const CareerPage = () => {
   return (
     <>
       <AboutWrapper>
-        <section>향수</section>
-        <section>제약</section>
-        <section>일본</section>
-        <section>개발</section>
-        <section>관심사</section>
+        <div className='cs-category-group'>
+          <div className='cs-category cs-category-career'>
+            경력
+          </div>
+          <div className='cs-category cs-category-skill'>
+            스킬
+          </div>
+        </div>
+        <section>경력</section>
+        <section>스킬</section>
       </AboutWrapper>
 
     </>
