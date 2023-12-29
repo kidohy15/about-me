@@ -12,16 +12,21 @@ export const AboutWrapper = styled.div`
     display: flex;
     
     .cs-category {
+      text-align: center;
       background-color: #d2e3fc;
+      background-color: rgba(110, 100, 99, 0.7);
       border: 1px solid black;
       width: 500px;
       height: 50px;
       cursor: pointer;
       text-align: center;
+      font-size: 32px;
+      color: #fff;
     }
     .cs-category:hover,
     .cs-category:focus {
       background-color: aquamarine;
+      background-color: rgba(110, 100, 99, 1);
     }
   }
   

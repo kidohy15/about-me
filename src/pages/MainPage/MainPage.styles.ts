@@ -4,7 +4,8 @@ export const MainViewWrapper = styled.section`
   display: flex;
   /* justify-content: center; */
   background-image: url("../../../public/assets/ptt3.jpg");
-  background-position: cover;
+  /* background-position: cover; */
+  background: url(../../../public/assets/ptt3.jpg) no-repeat center/cover;
   width: 100%;
   height: 100vh;
   `
