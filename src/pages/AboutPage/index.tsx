@@ -1,83 +1,100 @@
-import React from 'react'
-import { AboutWrapper } from './AboutPage.styles'
+import React, { useState } from "react";
+import {
+  AboutWrapper,
+  DevContainer,
+  JapanContainer,
+  MedicineContainer,
+  PerfumeContainer,
+} from "./AboutPage.styles";
+import { Link } from "react-scroll";
 
-const AboutPage = () => {
+interface AboutProps {
+  aboutBtn: BtnType;
+}
+
+type BtnType = "perfume" | "medicine" | "japan" | "dev";
+
+const AboutPage = ({ aboutBtn = "perfume" }: AboutProps) => {
+  const [activeBtn, setActiveBtn] = useState(aboutBtn);
+
+  // const onClickBtn = () => {
+
+  // }
+
+  // if (activeBtn === 'perfume') {
+  //   const offset = $(".perfume").offset();
+  //   $('html, body').animate({scrollTop : offset.top}, 400);
+  // } else if (activeBtn === 'perfume') {
+
+  // } else if (activeBtn === 'perfume') {
+
+  // }
+
   return (
     <>
       <AboutWrapper>
-        <div className='about-menu'>
-          <ul>
-            <li>
-              <button>
-                2009
-              </button>
-            </li>
-            <li>
-              <button>
-                2014
-              </button>
-            </li>
-            <li>
-              <button>
-                2019
-              </button>
-            </li>
-            <li>
-              <button className='btn--red'>
-                2021
-              </button>
-            </li>
-          </ul>
+        <div className="about__menu">
+          <Link to="perfume" spy={true} smooth={true}>
+            <button
+              onClick={() => setActiveBtn("perfume")}
+              className={activeBtn === "perfume" ? "about__menu--active" : ""}
+            >
+              2009
+            </button>
+          </Link>
+          <Link to="medicine" spy={true} smooth={true}>
+            <button
+              onClick={() => setActiveBtn("medicine")}
+              className={activeBtn === "medicine" ? "about__menu--active" : ""}
+            >
+              2014
+            </button>
+          </Link>
+          <Link to="japan" spy={true} smooth={true}>
+            <button
+              onClick={() => setActiveBtn("japan")}
+              className={activeBtn === "japan" ? "about__menu--active" : ""}
+            >
+              2019
+            </button>
+          </Link>
+          <Link to="dev" spy={true} smooth={true}>
+            <button
+              onClick={() => setActiveBtn("dev")}
+              className={activeBtn === "dev" ? "about__menu--active" : ""}
+            >
+              2021
+            </button>
+          </Link>
         </div>
-        <section className='perfume'>
-          <div className='inner'>
-            <div className='contents'>
-              <h3>
-                향수
-              </h3>
-              <p>
-                향수 설명
-                관련 프로젝트 이동
-              </p>
+
+        <PerfumeContainer id="perfume">
+          <div className="inner">
+            <div className="contents">
+              <h3>향수</h3>
+              <p>향수 설명 관련 프로젝트 이동</p>
             </div>
           </div>
-        </section>
+        </PerfumeContainer>
 
-        <section className='medicine'>
-          <div className='inner'>
-            제약
-            향수 설명
-            관련 프로젝트 이동
-          </div>
-        </section>
+        <MedicineContainer id="medicine">
+          <div className="inner">제약 향수 설명 관련 프로젝트 이동</div>
+        </MedicineContainer>
 
-        <section className='japan'>
-          <div className='inner'>
-            일본
-            향수 설명
-            관련 프로젝트 이동
-          </div>
-        </section>
+        <JapanContainer id="japan">
+          <div className="inner">일본 향수 설명 관련 프로젝트 이동</div>
+        </JapanContainer>
 
-        <section className='dev'>
-          <div className='inner'>
-            개발
-            향수 설명
-            관련 프로젝트 이동
-          </div>
-        </section>
+        <DevContainer id="dev">
+          <div className="inner">개발 향수 설명 관련 프로젝트 이동</div>
+        </DevContainer>
 
-        <section className='interest'>
-         <div className='inner'>
-            관심사
-            향수 설명
-            관련 프로젝트 이동
-          </div>
+        <section className="interest">
+          <div className="inner">관심사 향수 설명 관련 프로젝트 이동</div>
         </section>
       </AboutWrapper>
-
     </>
-  )
-}
+  );
+};
 
-export default AboutPage
+export default AboutPage;

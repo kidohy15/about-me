@@ -7,7 +7,7 @@ export const AboutWrapper = styled.div`
   justify-content: center;
   
   
-  & > .about-menu {
+  & > .about__menu {
     z-index: 99;
     position: fixed;
     left: 0;
@@ -15,15 +15,16 @@ export const AboutWrapper = styled.div`
     margin-top: 120px;
     /* display: flex; */
     /* margin: 50px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
 
-    & > ul {
-      width: 100%;
-      height: 80vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
 
-      & > li {
+
+
+      & > a {
+        /* width: 100% */
         width: 100%;
         height: 25%;
         border: 1px solid #c8c8c8;
@@ -35,9 +36,10 @@ export const AboutWrapper = styled.div`
           font-size: 150%;
           background-color: rgba(109, 109, 110, 0.7);
           color: #fff;
+          cursor: pointer;
         }
 
-        button.btn--red {
+        button.about__menu--active {
           width: 100%;
           height: 100%;
           font-size: 150%;
@@ -46,7 +48,7 @@ export const AboutWrapper = styled.div`
           color: #fff;
         }
       }
-    }
+    
   }
 
   & > section {
@@ -74,12 +76,13 @@ export const AboutWrapper = styled.div`
     }
   }
   
-  & > section.perfume {
+
+  /* & > section.perfume {
     background: url(../../../public/assets/bg_pf.jpg) no-repeat center/cover;
-  }
-  & > section.medicine {
+  } */
+  /* & > section.medicine {
     background: url(../../../public/assets/bg_mdc.jpg) no-repeat center/cover;
-  }
+  } */
   & > section.japan {
     background: url(../../../public/assets/bg_jp.jpg) no-repeat center/cover;
   }
@@ -89,4 +92,16 @@ export const AboutWrapper = styled.div`
   & > section.interest {
     background: url(../../../public/assets/bg_itr.jpg) no-repeat center/cover;
   }
+`
+export const PerfumeContainer = styled.section`
+  background: url(../../../public/assets/bg_pf.jpg) no-repeat center/cover;
+`
+export const MedicineContainer = styled.section`
+    background: url(../../../public/assets/bg_mdc.jpg) no-repeat center/cover;
+`
+export const JapanContainer = styled.section`
+    background: url(../../../public/assets/bg_jp.jpg) no-repeat center/cover;
+`
+export const DevContainer = styled.section`
+    background: url(../../../public/assets/bg_dev.jpg) no-repeat center/cover;
 `
