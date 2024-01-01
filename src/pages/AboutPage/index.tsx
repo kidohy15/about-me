@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import {
   AboutWrapper,
   DevContainer,
+  InfoContainer,
   JapanContainer,
   MedicineContainer,
   PerfumeContainer,
@@ -12,9 +13,9 @@ interface AboutProps {
   aboutBtn: BtnType;
 }
 
-type BtnType = "perfume" | "medicine" | "japan" | "dev";
+type BtnType = "info" | "perfume" | "medicine" | "japan" | "dev";
 
-const AboutPage = ({ aboutBtn = "perfume" }: AboutProps) => {
+const AboutPage = ({ aboutBtn = "info" }: AboutProps) => {
   const [activeBtn, setActiveBtn] = useState(aboutBtn);
 
   // const onClickBtn = () => {
@@ -34,6 +35,14 @@ const AboutPage = ({ aboutBtn = "perfume" }: AboutProps) => {
     <>
       <AboutWrapper>
         <div className="about__menu">
+          <Link to="info" spy={true} smooth={true}>
+            <button
+              onClick={() => setActiveBtn("info")}
+              className={activeBtn === "info" ? "about__menu--active info" : "info"}
+            >
+              인적사항
+            </button>
+          </Link>
           <Link to="perfume" spy={true} smooth={true}>
             <button
               onClick={() => setActiveBtn("perfume")}
@@ -67,6 +76,10 @@ const AboutPage = ({ aboutBtn = "perfume" }: AboutProps) => {
             </button>
           </Link>
         </div>
+
+        <InfoContainer id="info">
+          <div className="inner">내 이력 사항 이동</div>
+        </InfoContainer>
 
         <PerfumeContainer id="perfume">
           <div className="inner">

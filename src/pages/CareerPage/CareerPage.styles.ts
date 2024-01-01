@@ -1,17 +1,23 @@
 import styled from "styled-components";
 
-export const AboutWrapper = styled.div`
-  display: flex;
+export const CareerWrapper = styled.div`
+  width: 100%;
+  height: 100%;
   flex-direction: column;
   position: relative;
-  margin-top: 120px;
+  /* margin-top: 120px; */
   justify-content: center;
+  background-color: gray;
 
   & .cs-category-group {
+    /* position: relative; */
+    /* top: 100px; */
+    margin-top: 120px;
     justify-content: center;
     display: flex;
     
     .cs-category {
+      margin-top: 20px;
       text-align: center;
       background-color: #d2e3fc;
       background-color: rgba(110, 100, 99, 0.7);
@@ -32,9 +38,46 @@ export const AboutWrapper = styled.div`
   
   & > section {
     margin: 20px 10px;
+    height: 100%;
     display: flex;
     justify-content: center;
-    border-bottom: 1px solid #c8c8c8;
+    border: 1px solid #c8c8c8;
+    background-color: #fff;
+    opacity: .9;
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      margin: 20px;
+      padding: 20px;
+      background-color: oldlace;
+      gap: 10px;
+      justify-content: center;
+      li {
+        background-color: #fff;
+        padding: 20px;
+        width: 40%;
+        border: 1px solid black;
+      }
+    }
+    
+    .career {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      margin: 20px;
+      padding: 20px;
+      background-color: oldlace;
+      gap: 10px;
+      justify-content: center;
+      li {
+        background-color: #fff;
+        padding: 20px;
+        width: 80%;
+        border: 1px solid black;
+      }
+    }
 
   }
 `
