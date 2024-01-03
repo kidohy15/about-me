@@ -26,6 +26,23 @@ export const PortfolioWrapper = styled.div`
       margin: 10px 10px;
       background-color: #fff;
       
+      & .portfolio-image {
+        border: 1px solid red;
+        width: 30%;
+        margin: 10px 30px 10px 10px;
+        background-color: aliceblue;
+      }
+      
+      & .portfolio-description {
+        margin: 10px;
+        padding: 10px;
+        background-color: bisque;
+        border: 1px solid red;
+        width: 50%;
+
+        
+      }
+      
     }
   }
 `

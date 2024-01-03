@@ -38,7 +38,9 @@ const AboutPage = ({ aboutBtn = "info" }: AboutProps) => {
           <Link to="info" spy={true} smooth={true}>
             <button
               onClick={() => setActiveBtn("info")}
-              className={activeBtn === "info" ? "about__menu--active info" : "info"}
+              className={
+                activeBtn === "info" ? "about__menu--active info" : "info"
+              }
             >
               인적사항
             </button>
@@ -78,7 +80,14 @@ const AboutPage = ({ aboutBtn = "info" }: AboutProps) => {
         </div>
 
         <InfoContainer id="info">
-          <div className="inner">내 이력 사항 이동</div>
+          <div className="inner">
+            <div className="infoContents">
+              <div className="infoContents--item">이름</div>
+              <div className="infoContents--item">학교</div>
+              <div className="infoContents--item">경력</div>
+              <div className="infoContents--item">교육</div>
+            </div>
+          </div>
         </InfoContainer>
 
         <PerfumeContainer id="perfume">

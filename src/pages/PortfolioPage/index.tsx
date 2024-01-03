@@ -7,59 +7,107 @@ const PortfolioPage = () => {
       <PortfolioWrapper>
         <div className='portfolio-contents'>
           <div className='portfolio-item'>
-            <div>이미지</div>
-            <div>
-              <h5>제목</h5>
-              <p>내용</p>
+            <div className='portfolio-image'>이미지</div>
+            <div className='portfolio-description'>
+              <h5>00 project</h5>
+              <p>
+                - 요약 : <br/>
+                111<br />
+                <br/>
+                - 사용 : <br/>
+                111<br />
+              </p>
             </div>
           </div>
           <div className='portfolio-item'>
-            <div>이미지</div>
-            <div>
-              <h5>제목</h5>
-              <p>내용</p>
+            <div className='portfolio-image'>이미지</div>
+            <div className='portfolio-description'>
+              <h5>00 project</h5>
+              <p>
+                - 요약 : <br/>
+                111<br />
+                <br/>
+                - 사용 : <br/>
+                111<br />
+              </p>
             </div>
           </div>
           <div className='portfolio-item'>
-            <div>이미지</div>
-            <div>
-              <h5>제목</h5>
-              <p>내용</p>
+            <div className='portfolio-image'>이미지</div>
+            <div className='portfolio-description'>
+              <h5>00 project</h5>
+              <p>
+                - 요약 : <br/>
+                111<br />
+                <br/>
+                - 사용 : <br/>
+                111<br />
+              </p>
             </div>
           </div>
           <div className='portfolio-item'>
-            <div>이미지</div>
-            <div>
-              <h5>제목</h5>
-              <p>내용</p>
+            <div className='portfolio-image'>이미지</div>
+            <div className='portfolio-description'>
+              <h5>00 project</h5>
+              <p>
+                - 요약 : <br/>
+                111<br />
+                <br/>
+                - 사용 : <br/>
+                111<br />
+              </p>
             </div>
           </div>
           <div className='portfolio-item'>
-            <div>이미지</div>
-            <div>
-              <h5>제목</h5>
-              <p>내용</p>
+            <div className='portfolio-image'>이미지</div>
+            <div className='portfolio-description'>
+              <h5>00 project</h5>
+              <p>
+                - 요약 : <br/>
+                111<br />
+                <br/>
+                - 사용 : <br/>
+                111<br />
+              </p>
             </div>
           </div>
           <div className='portfolio-item'>
-            <div>이미지</div>
-            <div>
-              <h5>제목</h5>
-              <p>내용</p>
+            <div className='portfolio-image'>이미지</div>
+            <div className='portfolio-description'>
+              <h5>00 project</h5>
+              <p>
+                - 요약 : <br/>
+                111<br />
+                <br/>
+                - 사용 : <br/>
+                111<br />
+              </p>
             </div>
           </div>
           <div className='portfolio-item'>
-            <div>이미지</div>
-            <div>
-              <h5>제목</h5>
-              <p>내용</p>
+            <div className='portfolio-image'>이미지</div>
+            <div className='portfolio-description'>
+              <h5>00 project</h5>
+              <p>
+                - 요약 : <br/>
+                111<br />
+                <br/>
+                - 사용 : <br/>
+                111<br />
+              </p>
             </div>
           </div>
           <div className='portfolio-item'>
-            <div>이미지</div>
-            <div>
-              <h5>제목</h5>
-              <p>내용</p>
+            <div className='portfolio-image'>이미지</div>
+            <div className='portfolio-description'>
+              <h5>00 project</h5>
+              <p>
+                - 요약 : <br/>
+                111<br />
+                <br/>
+                - 사용 : <br/>
+                111<br />
+              </p>
             </div>
           </div>
         </div>

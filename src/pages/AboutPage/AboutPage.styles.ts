@@ -10,14 +10,17 @@ export const AboutWrapper = styled.div`
     z-index: 99;
     position: fixed;
     left: 0;
-    width: 10%;
-    margin-top: 120px;
+    width: 12%;
+    height: 80vh;
+    padding-top: 120px;
+    margin: auto 0;
+    top: 0;
+    bottom: 0;
     /* display: flex; */
     /* margin: 50px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 80vh;
 
     & > a {
       /* width: 100% */
@@ -68,10 +71,16 @@ export const AboutWrapper = styled.div`
     /* margin: 20px 0; */
     /* display: flex; */
     border-bottom: 1px solid #c8c8c8;
+    display: flex;
+    justify-content: center;
 
     & > .inner {
-      padding: 90px 10% 0;
-      height: 90%;
+      padding: 120px 7% 120px;
+      width: 90vw;
+      height: 100vh;
+      position: absolute;
+      margin: 0 auto;
+      left: 11%;
 
       & > .contents {
         margin: 40px 40px 10px 40px;
@@ -103,6 +112,39 @@ export const AboutWrapper = styled.div`
 
 export const InfoContainer = styled.section`
   background: black;
+  height: 100%;
+
+  & .inner {
+    height: 100%;
+    position: relative;
+    padding-left: 150px;
+    padding-bottom: 120px;
+  }
+  
+  & .inner .infoContents {
+    /* padding-top: 120px; */
+    height: 70%;
+    width: 80%;
+    margin: auto auto;
+    position: absolute;
+    top: 100px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    & .infoContents--item {
+      align-items: center;
+      height: 20%;
+      background: #fff;
+      margin: 10px 10px 10px;
+      border-bottom: 1px solid black;
+
+    }
+  }
 `;
 export const PerfumeContainer = styled.section`
   background: url(../../../public/assets/bg_pf.jpg) no-repeat center/cover;
