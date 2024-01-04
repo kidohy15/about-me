@@ -54,6 +54,7 @@ export const TextContainer = styled.div`
   /* text-align: center; */
   
   p {
+    font-weight: 900;
     /* color: #95ff00; */
     color: #00fff0;
     /* text-shadow: 0 0 20px #ffff31; */
@@ -81,7 +82,7 @@ export const TextContainer = styled.div`
   .box1 {
     background-color: #000000;
     height: 34%;
-    animation: move1 1.2s forwards ease-in-out;
+    animation: move1 .7s forwards ease-in-out;
     /* border-left: 2px solid #fbff00; */
     width: 400px;
     margin-left: -410px;
@@ -90,20 +91,20 @@ export const TextContainer = styled.div`
   .box2 {
     background-color: #000000;
     height: 30%;
-    animation: move2 1.2s forwards ease-in-out;
+    animation: move2 .7s forwards ease-in-out;
     /* border-left: 2px solid #fbff00; */
     width: 400px;
     margin-left: -410px;
-    animation-delay: 2.3s;
+    animation-delay: 1.2s;
   }
   .box3 {
     background-color: #000000;
     height: 36%;
-    animation: move3 1.2s forwards ease-in-out;
+    animation: move3 .7s forwards ease-in-out;
     /* border-left: 2px solid #fbff00; */
     width: 400px;
     margin-left: -410px;
-    animation-delay: 4s;
+    animation-delay: 2s;
   }
   @keyframes move1 {
 

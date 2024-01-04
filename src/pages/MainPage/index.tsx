@@ -11,15 +11,15 @@ const MainPage = () => {
 
   useEffect(() => {
     gsap.to(".fadeIn1", {
-      delay: 2.3,
+      delay: 1.1,
       opacity: 0,
     });
     gsap.to(".fadeIn2", {
-      delay: 4,
+      delay: 1.9,
       opacity: 0,
     });
     gsap.to(".fadeIn3", {
-      delay: 5.5,
+      delay: 4,
       opacity: 0,
     });
   });
