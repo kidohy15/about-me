@@ -39,7 +39,7 @@ export const CareerWrapper = styled.div`
   & > section {
     margin: 20px 10px;
     height: 100%;
-    display: flex;
+    display: none;
     justify-content: center;
     border: 1px solid #c8c8c8;
     background-color: #fff;
@@ -80,4 +80,5 @@ export const CareerWrapper = styled.div`
     }
 
   }
+
 `

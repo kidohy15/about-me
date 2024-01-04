@@ -1,15 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import { CareerWrapper } from "./CareerPage.styles";
 
 const CareerPage = () => {
+
+  // const [isContentView, setIsContentView] = useState(false)
+  const careerView = () => {
+    // setIsContentView(!isContentView)
+  }
   return (
     <>
       <CareerWrapper>
         <div className="cs-category-group">
-          <div className="cs-category cs-category-career">개발 경력</div>
+          <div className="cs-category cs-category-career" onClick={() => careerView()}>개발 경력</div>
           <div className="cs-category cs-category-skill">보유 스킬</div>
         </div>
-        <section>
+        <section className="careerContainer">
           <ul className="career">
             <li>
               <h3>프로젝트명: 한미 jvm 프로젝트</h3>
@@ -61,7 +66,7 @@ const CareerPage = () => {
             </li>
           </ul>
         </section>
-        <section>
+        <section className="skillsContainer">
           <ul className="skills">
             <li>
               <h3>Back-End</h3>
